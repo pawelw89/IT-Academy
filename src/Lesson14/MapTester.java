@@ -3,7 +3,7 @@ package Lesson14;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MapTster {
+public class MapTester {
     public static void main(String[] args) {
         Person kowalski = new Person ("Jan", "Kowalski");
         Person nowak = new Person("Janusz", "Nowak");

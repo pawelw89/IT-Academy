@@ -2,9 +2,9 @@ package Lesson7Hometask3;
 
 public class Engine {
 
-    String name;
-    int horsepower;
-    int cacpacity;
+    protected String name;
+    protected int horsepower;
+    protected int cacpacity;
     boolean isStarted;
 
     public Engine(String name, int horsepower, int cacpacity) {
@@ -15,12 +15,12 @@ public class Engine {
     }
 
     public void startEngine() {
-        boolean isStarted = true;
+        isStarted = true;
         System.out.println(name + " engine has been started");
     }
 
     public void stopEngine() {
-        boolean isStarted = false;
+        isStarted = false;
         System.out.println(name + " engine has been stopped");
     }
     boolean isStarted () {

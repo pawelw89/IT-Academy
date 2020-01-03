@@ -14,7 +14,7 @@ public class DebitAccount extends Account {
 
     @Override
     public BigDecimal topUp(BigDecimal amount) {
-        if(amount.compareTo(BigDecimal.ZERO) >= 0) {
+        if(amount.compareTo(BigDecimal.ZERO) >= -5000) {
             balance = balance.add(amount);
         } else {
             System.out.println("Cant top up on negative amount");

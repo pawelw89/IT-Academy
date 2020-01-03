@@ -3,11 +3,11 @@ package Lesson7Hometask;
 import javax.swing.*;
 
 public class MobilePhone {
-    String brand;
-    String model;
-    int batteryCapacity;
-    int currentBatteryCapacity;
-    int memory;
+    private String brand;
+    private String model;
+    private int batteryCapacity;
+    private int currentBatteryCapacity;
+    private int memory;
     boolean discharged;
 
     MobilePhone(String brand, String model, int batteryCapacity, int memory) {

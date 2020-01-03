@@ -10,7 +10,13 @@ public class CarTester {
         vw.drive(100,50);
         vw.startEngine();
         vw.startEngine();
+        vw.stopEngine();
+        vw.startEngine();
         vw.drive(100,50);
-
+        vw.drive(500, 50);
+        vw.drive (100, 150);
+        vw.drive (100, 50);
+        vw.tank();
+        vw.drive (100, 50);
     }
 }

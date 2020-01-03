@@ -1,9 +1,11 @@
 package Lesson11.account;
 
+import Lesson11.Withdrawable;
+import Lesson11.Wplatomat;
 import Lesson11.exceptions.NotEnoughMoney;
 import java.math.BigDecimal;
 
-public class CreditAccount extends Account{
+public class CreditAccount extends Account implements Wplatomat, Withdrawable {
 
     private BigDecimal balance;
 

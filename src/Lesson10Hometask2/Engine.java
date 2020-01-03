@@ -1,6 +1,8 @@
 package Lesson10Hometask2;
 
-public class Engine {
+import java.util.Objects;
+
+public class Engine implements Cloneable{
 
     String name;
     int power;
@@ -24,5 +26,24 @@ public class Engine {
 
     public void setPower(int power) {
         this.power = power;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Engine engine = (Engine) o;
+        return power == engine.power &&
+                Objects.equals(name, engine.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, power);
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
 }

@@ -1,14 +1,23 @@
 package Lesson14;
 
+import java.time.LocalDate;
 import java.util.Objects;
 
 public class Person implements Comparable<Person> {
     private String firstName;
     private String lastName;
+    private LocalDate birthDay;
+
+    public Person(String firstName, String lastName, LocalDate birthDay) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.birthDay = birthDay;
+    }
 
     public Person(String firstName, String lastName) {
-        this. firstName = firstName;
-        this. lastName = lastName;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.birthDay = LocalDate.now();
     }
 
     @Override
@@ -37,5 +46,9 @@ public class Person implements Comparable<Person> {
             return firstName.compareTo(another.firstName);
         }
         return result;
+    }
+
+    public LocalDate getBirthDay() {
+        return birthDay;
     }
 }
