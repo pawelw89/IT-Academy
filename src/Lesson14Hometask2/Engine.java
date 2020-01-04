@@ -48,12 +48,11 @@ public class Engine implements Comparable<Engine> {
                 " KM";
     }
 
-
     @Override
     public int compareTo(Engine another) {
-        int result = ((Integer)horsePower).compareTo(another.getHorsePower());
+        int result = ((Integer)horsePower).compareTo((Integer)another.horsePower);
         if (result == 0) {
-            return ((Integer)capacity).compareTo(another.getCapacity());
+            return ((Integer)capacity).compareTo((Integer)another.capacity);
         }
         return result;
     }

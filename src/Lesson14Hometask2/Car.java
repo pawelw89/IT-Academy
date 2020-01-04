@@ -66,5 +66,4 @@ public class Car implements Comparable<Car>{
         }
         return result;
     }
-
 }
